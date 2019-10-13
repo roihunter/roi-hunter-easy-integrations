@@ -6,6 +6,7 @@
   "access_token": "abcd123456",
   "fb_pixel_id": "123456789",
   "google_conversion_id": "123456",
-  "google_conversion_label": "abcd_efg"
+  "google_conversion_label": "abcd_efg",
+  "plugin_version": "1.0.0"
 }
 ```
