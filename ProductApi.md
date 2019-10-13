@@ -1,5 +1,7 @@
 # Product API
 
+#### [GET] /products?page={page-number}&limit={max-items-per-page}&changed-since={date}
+
 ```JSON
 {
  "id": "12345",
