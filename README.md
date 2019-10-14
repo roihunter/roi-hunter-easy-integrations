@@ -55,3 +55,50 @@
 - [Product API](ProductApi.md)
 - [State API](StateApi.md)
 - [Store Info API](StoreInfoApi.md)
+
+## Js SDK
+```html
+<script src="https://storage.googleapis.com/goostav-static-files-master/{platform}-tracking.js" defer></script>
+```
+
+### RH Easy Data Layer
+```js
+// Global for all pages
+window.rhEasy = {
+  platform: 'WOO_COMMERCE',
+  conversionId: '123456789',
+  conversionLabel: 'aaaa_bbbbb',
+  fbPixelId: '123456789',
+  pageType: 'product', // product | cart | checkout
+};
+    
+// Product page only
+rhEasy.product = {
+    productId: '1234',
+    variantId: 'ab123'
+};
+
+// Cart page only
+rhEasy.cart = {
+  items: [
+    {
+      productId: '1234',
+      variantId: 'ab123'     
+    }
+  ]
+}
+
+// Checkout page only
+rhEasy.order = {
+  items: [
+    {
+      productId: '1234',
+      variantId: 'ab123'     
+    }
+  ]
+  totalPrice: 99.99,
+  currency: 'USD',
+  id: 1234
+}
+```
+
