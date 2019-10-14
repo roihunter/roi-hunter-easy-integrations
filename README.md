@@ -73,13 +73,13 @@ window.rhEasy = {
 };
     
 // Product page only
-rhEasy.product = {
+window.rhEasy.product = {
     productId: '1234',
     variantId: 'ab123'
 };
 
 // Cart page only
-rhEasy.cart = {
+window.rhEasy.cart = {
   items: [
     {
       productId: '1234',
@@ -89,7 +89,7 @@ rhEasy.cart = {
 }
 
 // Checkout page only
-rhEasy.order = {
+window.rhEasy.order = {
   items: [
     {
       productId: '1234',
