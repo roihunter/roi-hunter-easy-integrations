@@ -64,41 +64,48 @@
 ### RH Easy Data Layer
 ```js
 // Global for all pages
-window.rhEasy = {
+window.rhEasy = window.rhEasy || [];
+window.rhEasy.push({
   platform: 'WOO_COMMERCE',
   conversionId: '123456789',
   conversionLabel: 'aaaa_bbbbb',
   fbPixelId: '123456789',
   pageType: 'product', // product | cart | checkout
-};
+});
     
 // Product page only
-window.rhEasy.product = {
-    productId: '1234',
-    variantId: 'ab123'
-};
+window.rhEasy.push({
+    product: {
+        productId: '1234',
+        variantId: 'ab123'
+    }
+});
 
 // Cart page only
-window.rhEasy.cart = {
-  items: [
-    {
-      productId: '1234',
-      variantId: 'ab123'     
+window.rhEasy.push({
+    cart: {
+      items: [
+        {
+          productId: '1234',
+          variantId: 'ab123'     
+        }
+      ]
     }
-  ]
-}
+});
 
 // Checkout page only
-window.rhEasy.order = {
-  items: [
-    {
-      productId: '1234',
-      variantId: 'ab123'     
+window.rhEasy.push({
+    order: {
+      items: [
+        {
+          productId: '1234',
+          variantId: 'ab123'     
+        }
+      ]
+      totalPrice: 99.99,
+      currency: 'USD',
+      id: 1234
     }
-  ]
-  totalPrice: 99.99,
-  currency: 'USD',
-  id: 1234
-}
+});
 ```
 
