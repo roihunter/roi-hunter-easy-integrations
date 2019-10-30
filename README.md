@@ -109,3 +109,8 @@ window.rhEasy.push({
 });
 ```
 
+### Plugin uninstall
+When user uninstalls/removes the plugin from the store
+`GET https://goostav.roihunter.com/uninstall` (`GET https://goostav-staging.roihunter.com/uninstall` for sandbox environment)
+endpoint should be called.
+Use custom header `X-Authorization` with value access_token stored in plugin state (set by `/state` endpoint) for authorization.
