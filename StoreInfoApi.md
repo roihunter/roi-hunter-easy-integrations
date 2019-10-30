@@ -8,7 +8,8 @@
   "currency": "USD",
   "language": "en",
   "country": "us",
-  "owner_name": "Goostav The Robot",
+  "owner_first_name": "Goostav",
+  "owner_last_name": "The Robot",
   "contact_email": "gstv@mybeststore.com"
 }
 ```
