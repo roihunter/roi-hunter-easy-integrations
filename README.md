@@ -77,17 +77,22 @@ window.rhEasy.push({
 window.rhEasy.push({
     product: {
         productId: '1234',
-        variantId: 'ab123'
+        variantId: 'ab123',
+        price: 29.99,
+        currency: 'USD'
     }
 });
 
-// Cart page only
+// On `Add to Cart` event
 window.rhEasy.push({
     cart: {
       items: [
         {
           productId: '1234',
-          variantId: 'ab123'     
+          variantId: 'ab123',
+          price: 29.99,
+          currency: 'USD',
+          quantity: 2
         }
       ]
     }
