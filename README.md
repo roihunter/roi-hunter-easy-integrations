@@ -107,7 +107,7 @@ window.rhEasy.push({
           variantId: 'ab123'     
         }
       ],
-      totalPrice: 99.99,
+      totalPrice: 99.99, //without shipping
       currency: 'USD',
       id: 1234
     }
