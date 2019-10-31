@@ -77,17 +77,22 @@ window.rhEasy.push({
 window.rhEasy.push({
     product: {
         productId: '1234',
-        variantId: 'ab123'
+        variantId: 'ab123',
+        price: 29.99,
+        currency: 'USD'
     }
 });
 
-// Cart page only
+// On `Add to Cart` event
 window.rhEasy.push({
     cart: {
       items: [
         {
           productId: '1234',
-          variantId: 'ab123'     
+          variantId: 'ab123',
+          price: 29.99,
+          currency: 'USD',
+          quantity: 2
         }
       ]
     }
@@ -101,11 +106,16 @@ window.rhEasy.push({
           productId: '1234',
           variantId: 'ab123'     
         }
-      ]
-      totalPrice: 99.99,
+      ],
+      totalPrice: 99.99, //without shipping
       currency: 'USD',
       id: 1234
     }
 });
 ```
 
+### Plugin uninstall
+When user uninstalls/removes the plugin from the store
+`GET https://goostav.roihunter.com/uninstall` (`GET https://goostav-staging.roihunter.com/uninstall` for sandbox environment)
+endpoint should be called.
+Use custom header `X-Authorization` with value access_token stored in plugin state (set by `/state` endpoint) for authorization.
