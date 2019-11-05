@@ -73,7 +73,7 @@ window.rhEasy.push({
   pageType: 'product', // product | cart | checkout
 });
     
-// Product page only
+// Product page only or on product variant changed
 window.rhEasy.push({
     product: {
         productId: '1234',
