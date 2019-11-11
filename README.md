@@ -6,7 +6,7 @@
 <script>
     window.addEventListener("DOMContentLoaded", function () {
         const payload = {
-            profile: 'production',
+            profile: 'production', // or 'staging' for testing mode
             platform: 'WOO_COMMERCE',
             plugin_version: '1.0.0',
             client_token: 'abcdefgh123', // Token for Plugin API authentication
@@ -22,6 +22,7 @@
             )
         );
 
+        // For testing environment: const iframeUrl = `https://goostav-fe-staging.roihunter.com?payload=${payloadBase64}`;
         const iframeUrl = `https://goostav-fe.roihunter.com?payload=${payloadBase64}`;
         document.getElementById('rhEasyIframe').src = iframeUrl;
     }, false);
