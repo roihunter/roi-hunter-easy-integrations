@@ -7,7 +7,6 @@
     window.addEventListener("DOMContentLoaded", function () {
         const payload = {
             profile: 'production', // or 'staging' for testing mode
-            platform: 'WOO_COMMERCE',
             plugin_version: '1.0.0',
             client_token: 'abcdefgh123', // Token for Plugin API authentication
             api_base_url: 'https://mybeststore.com/api/roi-hunter-easy/v3/',
@@ -22,8 +21,8 @@
             )
         );
 
-        // For testing environment: const iframeUrl = `https://goostav-fe-staging.roihunter.com?payload=${payloadBase64}`;
-        const iframeUrl = `https://goostav-fe.roihunter.com?payload=${payloadBase64}`;
+        // For testing environment: const iframeUrl = `https://goostav-fe-staging.roihunter.com?platform=WOO_COMMERCE&payload=${payloadBase64}`;
+        const iframeUrl = `https://goostav-fe.roihunter.com?platform=WOO_COMMERCE&payload=${payloadBase64}`;
         document.getElementById('rhEasyIframe').src = iframeUrl;
     }, false);
 
