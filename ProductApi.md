@@ -13,6 +13,8 @@
       "currency": "USD",
       "title": "iPhone cover black",
       "description": "Product description",
+      "brand": "Brand name",
+      "url": "https://myshop.com/products/iphone-cover-black",
       "primary_category": "Cell Phone Accessories > Covers",
       "cover_image": "https://myshop.com/image.png",
       "additional_images": [
